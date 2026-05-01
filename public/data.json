@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://i.postimg.cc/example-course1.png",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Advanced JavaScript Mastery",
+    "instructor": "Sarah Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Deep dive into modern JavaScript concepts and patterns.",
+    "image": "https://i.postimg.cc/example-course2.png",
+    "category": "Development"
+  },
+  {
+    "id": 3,
+    "title": "React & Next.js Complete Guide",
+    "instructor": "David Johnson",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Build modern web apps using React and Next.js.",
+    "image": "https://i.postimg.cc/example-course3.png",
+    "category": "Development"
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Design Fundamentals",
+    "instructor": "Emily Davis",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Learn the basics of user interface and user experience design.",
+    "image": "https://i.postimg.cc/example-course4.png",
+    "category": "Design"
+  },
+  {
+    "id": 5,
+    "title": "Python for Data Science",
+    "instructor": "Michael Brown",
+    "duration": "22 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Analyze data and build models using Python.",
+    "image": "https://i.postimg.cc/example-course5.png",
+    "category": "Data Science"
+  },
+  {
+    "id": 6,
+    "title": "Digital Marketing Essentials",
+    "instructor": "Laura Wilson",
+    "duration": "10 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn SEO, social media marketing, and online branding.",
+    "image": "https://i.postimg.cc/example-course6.png",
+    "category": "Marketing"
+  }
+]
