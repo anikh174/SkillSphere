@@ -7,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-black text-white shadow-sm">
+      <div className="navbar bg-black/80 text-white shadow-sm fixed top-0 left-0 z-50 backdrop-blur-md">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-black rounded-box z-1 w-30 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-black rounded-box z-1 w-30 p-2 shadow text-lg"
             >
               <li>
             <NavLink href={"/"}>Home</NavLink>
@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden md:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-lg">
             <li>
             <NavLink href={"/"}>Home</NavLink>
           </li>
