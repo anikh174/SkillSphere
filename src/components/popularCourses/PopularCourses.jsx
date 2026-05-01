@@ -2,14 +2,12 @@
 import Link from "next/link";
 import { FaFire, FaHandPointRight, FaStar } from "react-icons/fa";
 import PopularCourseCard from "../PopularCourseCard/PopularCourseCard";
-import { AiFillThunderbolt } from "react-icons/ai";
 import { GiThunderball } from "react-icons/gi";
 
 const PopularCourses = async () => {
   const res = await fetch("https://skillsphere-flame.vercel.app/data.json");
   const courses = await res.json();
   const popularCourse = await courses.slice(0, 3);
-  console.log(popularCourse)
 
   return (
     <div className="bg-black py-5">
@@ -24,10 +22,10 @@ const PopularCourses = async () => {
           ))}
         </div>
 
-        <div className="flex justify-center mt-7 border-b-2 border-sky-200 w-40 mx-auto rounded-2xl hover:scale-105">
+        <div className="flex justify-center mt-7 border-b-2 border-orange-300 w-40 mx-auto rounded-2xl hover:scale-105">
           <Link
             href={"/courses"}
-            className="text-sky-200 font-bold flex gap-1 items-center text-xl"
+            className="text-orange-400 font-bold flex gap-1 items-center text-xl pb-1"
           >
             <FaHandPointRight />
             View All

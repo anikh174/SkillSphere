@@ -31,6 +31,10 @@ const PopularCourseCard = ({course}) => {
               `}>{course.level}</p>
           </div>
         </div>
+
+        <div className="px-2">
+          <button className="btn rounded-full my-4 w-full text-lg font-bold">View Details</button>
+        </div>
       </div>
     </div>
   );
