@@ -10,13 +10,13 @@ const PopularCourses = async () => {
   console.log(popularCourse)
 
   return (
-    <div className="bg-black/50 pt-5">
+    <div className="bg-black py-5">
       <div className="container mx-auto">
         <div className="px-5 lg:px-0">
           <h1 className="text-white text-3xl font-bold ">Popular Course</h1>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-5">
           {popularCourse.map((course) => (
             <PopularCourseCard course={course} key={course.id}></PopularCourseCard>
           ))}

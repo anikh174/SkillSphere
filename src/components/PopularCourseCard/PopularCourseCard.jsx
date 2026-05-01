@@ -13,12 +13,12 @@ const PopularCourseCard = ({course}) => {
             alt={course.title}
             height={500}
             width={500}
-            className="w-[500px] h-[300px]"
+            className="w-[400px] h-[150px] md:w-[400px] md:h-[200px] lg:w-[500px]"
           ></Image>
         </figure>
-        <div className="p-5 space-y-2">
+        <div className="p-5 space-y-1">
           <p>{course.category}</p>
-          <h2 className="card-title">{course.title}</h2>
+          <h2 className="">{course.title}</h2>
           <p>{course.instructor}</p>
           <div className="flex justify-between">
             <p className="flex gap-1 items-center text-lg font-bold text-yellow-500">
