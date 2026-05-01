@@ -6,7 +6,7 @@ import { TbWorld } from 'react-icons/tb';
 
 const Banner = () => {
     return (
-        <div className='bg-black pt-15'>
+        <div className='bg-black pt-20'>
             <div className=' flex items-center p-5 lg:p-20 gap-10 flex-col-reverse md:flex-row justify-center container mx-auto'>
                 <div className='text-center space-y-4 lg:space-y-8'>
                     <p className='text-sm font-semibold md:text-lg md:font-bold p-2 border border-orange-300 text-orange-400 w-50 md:w-65 mx-auto rounded-full bg-white'>New courses added weekly</p>
