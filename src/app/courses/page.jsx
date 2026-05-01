@@ -8,7 +8,7 @@ const AllCoursesPage = async () => {
   const res = await fetch("https://skillsphere-flame.vercel.app/data.json");
   const courses = await res.json();
   const AllCourses = await courses;
-  console.log(AllCourses);
+
   return (
     <div className="bg-black py-20">
       <div className="container mx-auto">
