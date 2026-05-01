@@ -7,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-black/80 text-white shadow-sm fixed top-0 left-0 z-50 backdrop-blur-md">
+      <div className="navbar bg-black/80 text-white shadow-sm shadow-white fixed top-0 left-0 z-50 backdrop-blur-md">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
