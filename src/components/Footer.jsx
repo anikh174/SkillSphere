@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-linear-to-t from-black to-black/90">
       <div className="container mx-auto py-3 lg:py-6">
-        <div className="flex justify-between flex-wrap px-5 lg:px-0 gap-5 md:gap-0">
+        <div className="flex justify-between flex-wrap px-5 lg:px-2 gap-5 md:gap-0">
           <div className="space-y-2">
             <h3 className="text-xl font-bold text-white">SkillSphere</h3>
             <div className="space-y-1 text-olive-300 font-bold text-sm">
