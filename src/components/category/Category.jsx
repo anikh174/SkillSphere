@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const Category = async () => {
-  const res = await fetch("http://localhost:3000/category.json");
+  const res = await fetch("https://skillsphere-flame.vercel.app/category.json");
   const categories = await res.json();
   return (
     <div className="text-white flex flex-wrap gap-2 md:gap-5 mt-5 mx-5 lg:mx-0 ">
