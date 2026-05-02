@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Development",
+    "slug": "development"
+  },
+  {
+    "id": 2,
+    "name": "Design",
+    "slug": "design"
+  },
+  {
+    "id": 3,
+    "name": "Marketing",
+    "slug": "marketing"
+  },
+  {
+    "id": 4,
+    "name": "AI / ML",
+    "slug": "ai-ml"
+  },
+  {
+    "id": 5,
+    "name": "Mobile",
+    "slug": "mobile"
+  },
+  {
+    "id": 6,
+    "name": "Security",
+    "slug": "security"
+  }
+]
