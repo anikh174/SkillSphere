@@ -1,12 +1,13 @@
+import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <div className="bg-linear-to-t from-black to-black/90">
       <div className="container mx-auto py-3 lg:py-6">
-        <div className="flex justify-between flex-wrap px-5 lg:px-0">
+        <div className="flex justify-between flex-wrap px-5 lg:px-0 gap-5 md:gap-0">
           <div className="space-y-2">
             <h3 className="text-xl font-bold text-white">SkillSphere</h3>
             <div className="space-y-1 text-olive-300 font-bold text-sm">
@@ -28,7 +29,9 @@ const Footer = () => {
           <div className="space-y-2">
             <h3 className="text-xl font-bold text-white">Contact</h3>
             <div className="space-y-1 text-olive-300 font-bold text-sm">
-              <p>skillsphere@gmail.com</p>
+              <p>hossainanik174@gamil.com</p>
+              <p>+880 15189563</p>
+              <p></p>
               <p>+1800 SKILL-01</p>
             </div>
           </div>
@@ -38,9 +41,9 @@ const Footer = () => {
           <h4 className="text-white">© 2026 SkillSphere</h4>
 
           <div className="flex items-center gap-2 text-white">
-            <FaFacebook></FaFacebook>
-            <FaXTwitter></FaXTwitter>
-            <FaInstagram></FaInstagram>
+            <Link href={'https://www.facebook.com/anik.hossain.174'}><FaFacebook className="h-6 w-6"></FaFacebook></Link>
+            <FaXTwitter className="h-6 w-6"></FaXTwitter>
+            <Link href={'https://www.linkedin.com/in/anik-hossain174/'}><FaLinkedin className="h-6 w-6"/></Link>
           </div>
         </div>
       </div>
