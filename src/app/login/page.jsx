@@ -4,7 +4,7 @@ import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const LoginPage = () => {
@@ -33,7 +33,12 @@ const LoginPage = () => {
     }
   };
 
-  console.log(watch("password"));
+  const handleGoogleRegister = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+  };
+
   return (
     <div className="container mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100 pt-20 pb-4 lg:pb-0 md:pt-28 md:pb-10 lg:pt-20">
       <div className="p-4 rounded-xl bg-white">
@@ -74,7 +79,15 @@ const LoginPage = () => {
           </fieldset>
         </form>
 
-        <p>
+        <div className="divider">OR</div>
+        <button
+          onClick={handleGoogleRegister}
+          className="flex gap-1 items-center w-full bg-black text-white justify-center btn"
+        >
+          <FaGoogle></FaGoogle>Login with Google
+        </button>
+
+        <p className="mt-5">
           Don't Have an account?{" "}
           <Link href={"/register"} className="text-sky-300">
             Register

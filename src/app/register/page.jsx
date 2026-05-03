@@ -4,7 +4,7 @@ import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const RegisterPage = () => {
@@ -38,6 +38,12 @@ const RegisterPage = () => {
       router.push('/')
     }
   };
+
+  const handleGoogleRegister = async()=>{
+    const data = await authClient.signIn.social({
+    provider: "google",
+  });
+  }
   return (
     <div className="container mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100 pt-20 pb-4 lg:pb-6 md:pt-28 md:pb-10 lg:pt-24">
       <div className="p-4 rounded-xl bg-white">
@@ -104,6 +110,9 @@ const RegisterPage = () => {
             <button className="btn btn-neutral mt-4">Register</button>
           </fieldset>
         </form>
+
+        <div className="divider">OR</div>
+        <button onClick={handleGoogleRegister} className="flex gap-1 items-center w-full bg-black text-white justify-center btn"><FaGoogle></FaGoogle>Register with Google</button>
       </div>
     </div>
   );
