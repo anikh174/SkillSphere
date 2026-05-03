@@ -1,17 +1,23 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
-import React from "react";
+import { useRouter } from "next/navigation";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const RegisterPage = () => {
+
+  const router = useRouter();
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
+
+  const [isShowPassword, setIsShowPassword] = useState(false)
 
   const handleRegisterFunc = async (data) => {
     const { name, photo, email, password } = data;
@@ -23,25 +29,24 @@ const RegisterPage = () => {
       image: photo,
       callbackURL: "/",
     });
-    
-    if(error){
-      alert(error.message)
+
+    if (error) {
+      toast.error(error.message);
     }
-    if(res){
-      alert("Register successful")
+    if (res) {
+      toast.success('Register successful')
+      router.push('/')
     }
   };
-
-  console.log(watch("password"));
   return (
-    <div className="container mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100 mt-25">
+    <div className="container mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100 pt-20 pb-4 lg:pb-6 md:pt-28 md:pb-10 lg:pt-24">
       <div className="p-4 rounded-xl bg-white">
         <h2 className="font-bold text-3xl text-center">
           Register your account
         </h2>
 
         <form className="mt-5" onSubmit={handleSubmit(handleRegisterFunc)}>
-          <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+          <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 relative">
             <label className="label">Name</label>
             <input
               type="text"
@@ -79,13 +84,19 @@ const RegisterPage = () => {
 
             <label className="label">Password</label>
             <input
-              type="password"
+              type={isShowPassword? "text" : "password"}
               className="input"
               placeholder="Password"
               {...register("password", {
                 required: "Password field is required",
               })}
             />
+            <span
+              className="absolute right-8 top-65 text-lg"
+              onClick={() => setIsShowPassword(!isShowPassword)}
+            >
+              {isShowPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}
+            </span>
             {errors.password && (
               <p className="text-red-500">{errors.password.message}</p>
             )}
