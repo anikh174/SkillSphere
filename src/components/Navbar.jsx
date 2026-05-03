@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="navbar-end flex gap-1 items-center">
             <Image src={userAvatar} alt="user" height={40} width={40} className="bg-orange-400 rounded-full"></Image>
           <button className="btn text-white bg-linear-to-r from-orange-500 to-orange-400 px-2 md:px-6 py-1 ">
-            <Link href={"/login"}>Login</Link>
+            <Link href={'/login'}>Login</Link>
           </button>
         </div>
       </div>

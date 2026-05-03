@@ -10,7 +10,6 @@ const Category = async () => {
         <Link key={c.id} href={`?category=${c.name.toLowerCase()}`}>
           <button>
             <p
-              key={c.id}
               className="text-orange-300 border-2 border-orange-300 px-3 text-center py-1 lg:px-4 lg:py-2 rounded-full font-semibold lg:font-bold text-sm lg:text-md cursor-pointer"
             >
               {c.name}
