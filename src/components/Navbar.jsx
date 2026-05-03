@@ -70,7 +70,7 @@ const Navbar = () => {
         {isPending ? <div className="flex gap-1 items-center navbar-end mr-5"><span className="loading loading-spinner text-accent"></span> loading...</div> : user? <div className="navbar-end flex gap-1 items-center">
           <Image
             src={user?.image || userAvatar}
-            alt="user"
+            alt={user?.name}
             height={40}
             width={40}
             className="bg-orange-400 rounded-full"
