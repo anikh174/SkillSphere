@@ -22,11 +22,8 @@ const AllCoursesPage = async ({searchParams}) => {
             All Courses <FaFire />
           </h1>
         </div>
-
-        <div className="flex  lg:gap-5">
-          <AllCategory AllCourses={AllCourses} category={category}></AllCategory>
+        
           <Category></Category>
-        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-5">
           {filteredCourses.map((course) => (

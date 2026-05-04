@@ -34,7 +34,7 @@ const RegisterPage = () => {
       toast.error(error.message);
     }
     if (res) {
-      toast.success('Register successful')
+      toast.success('Registration successful, Welcome to SkillSphere')
       router.push('/')
     }
   };

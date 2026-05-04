@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="flex items-center gap-2 text-white">
             <Link href={'https://www.facebook.com/anik.hossain.174'}><FaFacebook className="h-6 w-6"></FaFacebook></Link>
             <FaXTwitter className="h-6 w-6"></FaXTwitter>
-            <Link href={'https://www.linkedin.com/in/anik-hossain174/'}><FaLinkedin className="h-6 w-6"/></Link>
+            <Link href={'https://www.linkedin.com/in/anik-hossain174'}><FaLinkedin className="h-6 w-6"/></Link>
           </div>
         </div>
       </div>

@@ -10,9 +10,9 @@ export async function proxy(request) {
 if(!session){
     return NextResponse.redirect(new URL('/login', request.url))
 }
-//   return NextResponse.redirect(new URL('/home', request.url))
+
 }
  
 export const config = {
-  matcher: ['/profile', '/courses', '/courses/:path'],
+  matcher: ['/profile', '/courses/:path'],
 }
