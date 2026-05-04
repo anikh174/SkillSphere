@@ -58,14 +58,3 @@ const PopularCourseCard = ({ course }) => {
 };
 
 export default PopularCourseCard;
-
-{
-  /* <div className="relative group overflow-hidden">
-  <img src="https://via.placeholder.com/300" />
-
-  <div className="absolute inset-0 bg-black/60 flex items-center justify-center 
-                  translate-y-full group-hover:translate-y-0 transition duration-300">
-    <p className="text-white">View Details</p>
-  </div>
-</div> */
-}

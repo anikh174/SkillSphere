@@ -4,7 +4,7 @@ import { FaFire, FaHandPointRight, FaStar } from "react-icons/fa";
 import PopularCourseCard from "../PopularCourseCard/PopularCourseCard";
 import { GiThunderball } from "react-icons/gi";
 
-const PopularCourses = async () => {
+const PopularCourses = async() => {
   const res = await fetch("https://skillsphere-flame.vercel.app/data.json");
   const courses = await res.json();
   const popularCourse = await courses.slice(0, 3);
