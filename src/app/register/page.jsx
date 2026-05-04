@@ -43,6 +43,9 @@ const RegisterPage = () => {
     const data = await authClient.signIn.social({
     provider: "google",
   });
+  if(data){
+        toast.success("Registration successful, Welcome to SkillSphere!")
+      }
   }
   return (
     <div className="mx-auto min-h-[80vh] flex justify-center items-center bg-black pt-20 pb-4 lg:pb-6 md:pt-28 md:pb-10 lg:pt-24">

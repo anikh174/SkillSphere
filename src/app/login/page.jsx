@@ -26,10 +26,10 @@ const LoginPage = () => {
     });
 
     if (error) {
-      toast.error(error.message);
+      toast.error(error.message)
     }
     if (res) {
-      toast.success("Login successful");
+      toast.success("LogIn Successful, Welcome Back!")
     }
   };
 
@@ -37,6 +37,9 @@ const LoginPage = () => {
     const data = await authClient.signIn.social({
       provider: "google",
     });
+    if(data){
+      toast.success("Login successful, Welcome back!")
+    }
   };
 
   return (
