@@ -45,15 +45,15 @@ const RegisterPage = () => {
   });
   }
   return (
-    <div className="container mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100 pt-20 pb-4 lg:pb-6 md:pt-28 md:pb-10 lg:pt-24">
-      <div className="p-4 rounded-xl bg-white">
-        <h2 className="font-bold text-3xl text-center">
-          Register your account
+    <div className="mx-auto min-h-[80vh] flex justify-center items-center bg-black pt-20 pb-4 lg:pb-6 md:pt-28 md:pb-10 lg:pt-24">
+      <div className="p-4 rounded-xl bg-black border-t-4 border-b-4 border-orange-400 shadow-sm shadow-orange-300">
+        <h2 className="font-bold text-3xl text-center text-orange-300">
+          Register your Account
         </h2>
 
         <form className="mt-5" onSubmit={handleSubmit(handleRegisterFunc)}>
-          <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 relative">
-            <label className="label">Name</label>
+          <fieldset className="fieldset bg-base-200 border-orange-300 rounded-box w-xs border-4 p-4 relative">
+            <label className="label text-lg text-orange-400 font-semibold">Name</label>
             <input
               type="text"
               className="input"
@@ -64,7 +64,7 @@ const RegisterPage = () => {
               <p className="text-red-500">{errors.name.message}</p>
             )}
 
-            <label className="label">Photo Url</label>
+            <label className="label text-lg text-orange-400 font-semibold">Photo Url</label>
             <input
               type="text"
               className="input"
@@ -77,7 +77,7 @@ const RegisterPage = () => {
               <p className="text-red-500">{errors.photo.message}</p>
             )}
 
-            <label className="label">Email</label>
+            <label className="label text-lg text-orange-400 font-semibold">Email</label>
             <input
               type="email"
               className="input"
@@ -88,7 +88,7 @@ const RegisterPage = () => {
               <p className="text-red-500">{errors.email.message}</p>
             )}
 
-            <label className="label">Password</label>
+            <label className="label text-lg text-orange-400 font-semibold">Password</label>
             <input
               type={isShowPassword? "text" : "password"}
               className="input"
@@ -98,7 +98,7 @@ const RegisterPage = () => {
               })}
             />
             <span
-              className="absolute right-8 top-65 text-lg"
+              className="absolute right-6 top-75 text-lg"
               onClick={() => setIsShowPassword(!isShowPassword)}
             >
               {isShowPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}
@@ -111,7 +111,7 @@ const RegisterPage = () => {
           </fieldset>
         </form>
 
-        <div className="divider">OR</div>
+        <div className="divider text-lg text-gray-700 font-semibold">OR</div>
         <button onClick={handleGoogleRegister} className="flex gap-1 items-center w-full bg-black text-white justify-center btn"><FaGoogle></FaGoogle>Register with Google</button>
       </div>
     </div>
