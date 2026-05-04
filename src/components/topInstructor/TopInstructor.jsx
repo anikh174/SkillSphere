@@ -11,7 +11,7 @@ const TopInstructor = () => {
         </h3>
         <div className="py-5 lg:py-10 md:px-30">
           <div className="grid lg:grid-cols-4 grid-cols-2 gap-5 md:gap-10">
-            <div className="border-b-3 border-t-3 border-orange-300 p-5 rounded-2xl text-center space-y-1 w-40 md:w-50 lg:w-60">
+            <div className="border-b-3 border-t-3 border-orange-300 p-5 rounded-2xl text-center space-y-1 w-40 md:w-50 lg:w-60 hover:shadow-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
               <Image
                 src={
                   "https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png"
@@ -25,7 +25,7 @@ const TopInstructor = () => {
               <p className="text-md text-gray-300 font-bold">Web Dev</p>
             </div>
 
-            <div className="border-b-3 border-t-3 border-orange-300 p-5 rounded-2xl text-center space-y-1 w-40 md:w-50 lg:w-60">
+            <div className="border-b-3 border-t-3 border-orange-300 p-5 rounded-2xl text-center space-y-1 w-40 md:w-50 lg:w-60 hover:shadow-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
               <Image
                 src={
                   "https://static.vecteezy.com/system/resources/previews/020/838/924/non_2x/career-woman-icon-design-free-vector.jpg"
@@ -39,7 +39,7 @@ const TopInstructor = () => {
               <p className="text-md text-gray-300 font-bold">UI/UX</p>
             </div>
 
-            <div className="border-b-3 border-t-3 border-orange-300 p-5 rounded-2xl text-center space-y-1 w-40 md:w-50 lg:w-60">
+            <div className="border-b-3 border-t-3 border-orange-300 p-5 rounded-2xl text-center space-y-1 w-40 md:w-50 lg:w-60 hover:shadow-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
               <Image
                 src={
                   "https://png.pngtree.com/png-clipart/20231020/original/pngtree-avatar-of-a-brunette-man-png-image_13379741.png"
@@ -53,7 +53,7 @@ const TopInstructor = () => {
               <p className="lg:text-md text-gray-300 font-bold text-sm">Ethical Hacking</p>
             </div>
 
-            <div className="border-b-3 border-t-3 border-orange-300 p-5 rounded-2xl text-center space-y-1 w-40 md:w-50 lg:w-60">
+            <div className="border-b-3 border-t-3 border-orange-300 p-5 rounded-2xl text-center space-y-1 w-40 md:w-50 lg:w-60 hover:shadow-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
               <Image
                 src={
                   "https://img.freepik.com/premium-vector/boss-icon-vector-female-user-person-profile-avatar-symbol-business-pictogram_435942-2830.jpg"

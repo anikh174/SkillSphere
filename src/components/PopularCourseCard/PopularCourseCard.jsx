@@ -6,7 +6,7 @@ import { FaStar, FaUser } from "react-icons/fa";
 const PopularCourseCard = ({ course }) => {
   return (
     <div className="px-5 lg:px-0">
-      <div className="card bg-base-100 shadow-md shadow-orange-400 border-2 border-orange-400">
+      <div className="card bg-base-100 shadow-md shadow-orange-400 border-2 border-orange-400 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-400 relative group overflow-hidden">
         <figure>
           <Image
             src={course.image}
@@ -42,7 +42,10 @@ const PopularCourseCard = ({ course }) => {
           </div>
         </div>
 
-        <div className="px-2">
+        <div
+          className="px-2 lg:absolute lg:inset-0 lg:bg-black/60 lg:flex lg:items-center lg:justify-center 
+                  lg:translate-y-full lg:group-hover:translate-y-0 lg:transition lg:duration-500"
+        >
           <Link href={`/courses/${course.id}`}>
             <button className="btn rounded-full mb-2 w-full text-lg font-bold">
               View Details
@@ -55,3 +58,14 @@ const PopularCourseCard = ({ course }) => {
 };
 
 export default PopularCourseCard;
+
+{
+  /* <div className="relative group overflow-hidden">
+  <img src="https://via.placeholder.com/300" />
+
+  <div className="absolute inset-0 bg-black/60 flex items-center justify-center 
+                  translate-y-full group-hover:translate-y-0 transition duration-300">
+    <p className="text-white">View Details</p>
+  </div>
+</div> */
+}
