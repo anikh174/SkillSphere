@@ -1,3 +1,4 @@
+"use client"
 import { authClient } from "@/lib/auth-client";
 import React from "react";
 import { BiEdit } from "react-icons/bi";
